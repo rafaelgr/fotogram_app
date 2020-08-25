@@ -37,6 +37,7 @@ export class Tab2Page {
       coords: null,
       posicion: false
     };
+    this.tempImages = [];
     this.route.navigateByUrl('/main/tabs/tab1');
   }
 
