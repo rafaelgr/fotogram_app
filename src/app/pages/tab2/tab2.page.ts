@@ -90,7 +90,7 @@ export class Tab2Page {
      // If it's base64 (DATA_URL):
      // let base64Image = 'data:image/jpeg;base64,' + imageData;
      const img = window.Ionic.WebView.convertFileSrc(imageData);
-     console.log(img)
+     this.postsService.subirImagen(imageData);
      this.tempImages.push(img);
     }, (err) => {
      // Handle error
